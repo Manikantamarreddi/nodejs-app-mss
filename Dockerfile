@@ -1,4 +1,6 @@
 FROM node:10
+ARG branchName=dev
+LABEL branchnaname $branchName
 WORKDIR /usr/app
 COPY . .
 RUN npm install
